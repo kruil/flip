@@ -6,13 +6,13 @@
 	<meta name="description" content="Flip - Flashcards for iOS">
 	<meta name="keywords" content="ios flashcards learn language">
 	<link rel="canonical" href="https://flip.app/index.php">
-	<link rel="stylesheet" href="css/mycss.css">
+	<link rel="stylesheet" href="css/my.css">
 	<meta charset="utf-8">
 	<meta name="author" content="Ilia Krupko">
 	<link rel="shortcut icon" href="favicon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-	<link rel="stylesheet" href="css/my.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 </head>
 
@@ -20,9 +20,7 @@
 
 	<script>
 		$(document).ready(function() {
-    // Check for click events on the navbar burger icon
 			$(".navbar-burger").click(function() {
-        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
 				$(".navbar-burger").toggleClass("is-active");
 				$(".navbar-menu").toggleClass("is-active");
 			});
@@ -33,7 +31,7 @@
 	<div class="container">
 
 		<div class="navbar-brand">
-			<a class="navbar-item" href="index.php">
+			<a class="navbar-item" href="index.html">
 				<img src="img/logo.png" alt="Flip logo" height="32">
 			</a>
 			<div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
@@ -204,8 +202,8 @@
 			</p>
 
 			<p>
-				<strong>💎 100 Premium cards – $1.99</strong><br>
-				<strong>💎 1000 Premium cards – $9.99</strong>
+				<strong>💎 100 <span class="gradient-text">Premium cards</span> – $1.99</strong><br>
+				<strong>💎 1000 <span class="gradient-text">Premium cards</span> – $9.99</strong>
 			</p>
 
 			<p>
