@@ -1,3 +1,14 @@
 .flipcolor {
   color: #1E9AF1;
 }
+
+.secondary {
+	background-color: #F3F7FB;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #2179FE, #A558E2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
