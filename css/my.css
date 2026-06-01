@@ -7,8 +7,124 @@
 }
 
 .gradient-text {
-  background: linear-gradient(to right, #2179FE, #A558E2);
+  background: linear-gradient(to right, #218cfe, #A558E2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
+}
+
+.chat-stripe {
+  background: linear-gradient(240deg, #218cfe, #A558E2);
+}
+
+.chat-thread {
+  width: 100%;
+}
+
+.chat-row {
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+
+.chat-row:last-child {
+  margin-bottom: 0;
+}
+
+.chat-row--left {
+  justify-content: flex-start;
+}
+
+.chat-row--right {
+  justify-content: flex-end;
+}
+
+.chat-bubble {
+  position: relative;
+  padding: 1rem 1.25rem;
+  border-radius: 1.25rem;
+  line-height: 1.55;
+}
+
+.chat-bubble p:last-child {
+  margin-bottom: 0;
+}
+
+.chat-bubble--left,
+.chat-bubble--right {
+  background: #fff;
+  color: #363636;
+  border: 1px solid #d0d0d0;
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.12),
+    0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.chat-bubble--left {
+  max-width: min(100%, 28rem);
+}
+
+.chat-bubble--right {
+  width: 75%;
+  max-width: 75%;
+}
+
+.chat-bubble--left::before,
+.chat-bubble--left::after,
+.chat-bubble--right::before,
+.chat-bubble--right::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 0;
+  transform: translateY(-50%);
+}
+
+.chat-bubble--left::before {
+  left: -1.05rem;
+  border-top: 0.9rem solid transparent;
+  border-bottom: 0.9rem solid transparent;
+  border-right: 1.08rem solid #d0d0d0;
+  z-index: 0;
+}
+
+.chat-bubble--left::after {
+  left: -0.92rem;
+  border-top: 0.85rem solid transparent;
+  border-bottom: 0.85rem solid transparent;
+  border-right: 1rem solid #fff;
+  z-index: 1;
+}
+
+.chat-bubble--right::before {
+  right: -1.05rem;
+  border-top: 0.9rem solid transparent;
+  border-bottom: 0.9rem solid transparent;
+  border-left: 1.08rem solid #d0d0d0;
+  z-index: 0;
+}
+
+.chat-bubble--right::after {
+  right: -0.92rem;
+  border-top: 0.85rem solid transparent;
+  border-bottom: 0.85rem solid transparent;
+  border-left: 1rem solid #fff;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .chat-bubble--right {
+    width: 90%;
+    max-width: 90%;
+  }
+}
+
+.chat-bubble--right a {
+  color: #1E9AF1;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.chat-bubble--right a:hover {
+  color: #1578c4;
 }
