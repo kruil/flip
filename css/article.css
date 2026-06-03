@@ -1,0 +1,115 @@
+.book-column {
+   max-width: 740px;
+   margin: 0 auto;
+}
+
+.article-page {
+   padding-top: 5.5rem;
+}
+
+.book-article {
+   font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+   font-size: 21px;
+   line-height: 1.58;
+   letter-spacing: -0.003em;
+   color: #242424;
+   padding: 0;
+   box-shadow: none;
+   border: 0;
+   background: transparent;
+}
+
+.book-article .title {
+   font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-size: 46px;
+   line-height: 1.1;
+   letter-spacing: -0.014em;
+   margin-bottom: 0.8rem;
+}
+
+.book-article .subtitle {
+   font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-size: 22px;
+   line-height: 1.4;
+   letter-spacing: -0.003em;
+   margin-bottom: 2.5rem;
+   color: #6b6b6b;
+}
+
+.book-article .title + .subtitle {
+   margin-top: 0.95rem;
+}
+
+.book-article h2 {
+   font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-size: 32px;
+   line-height: 1.25;
+   letter-spacing: -0.012em;
+   margin-top: 2.75rem;
+   margin-bottom: 1rem;
+   font-weight: 700;
+}
+
+.book-article p {
+   margin-bottom: 1.35rem;
+}
+
+.book-article .content ul,
+.book-article .content ol {
+   margin-left: 1.4rem;
+}
+
+.book-article .content li {
+   margin-bottom: 0.65rem;
+}
+
+.book-article figure {
+   margin: 2rem 0;
+}
+
+.book-article figure img {
+   width: 100%;
+   height: 600px;
+   display: block;
+   object-fit: contain;
+}
+
+.book-article figure.figure-natural img {
+   height: auto;
+   object-fit: initial;
+}
+
+.book-article figure figcaption {
+   margin-top: 0.7rem;
+   font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-size: 14px;
+   line-height: 1.4;
+   color: #6b6b6b;
+   text-align: center;
+}
+
+.book-article .article-footer {
+   margin-top: 2.75rem;
+}
+
+@media screen and (max-width: 768px) {
+   .article-page {
+      padding-top: 4.75rem;
+   }
+
+   .book-article {
+      font-size: 19px;
+   }
+
+   .book-article .title {
+      font-size: 36px;
+   }
+
+   .book-article .subtitle {
+      font-size: 20px;
+   }
+
+   .book-article h2 {
+      font-size: 28px;
+   }
+}
