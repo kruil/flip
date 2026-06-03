@@ -5,13 +5,13 @@
       <meta name="description" content="Flip - Flashcards for iOS">
       <meta name="keywords" content="ios карточки изучение языков">
       <link rel="canonical" href="https://kruil.github.io/flip">
-      <link rel="stylesheet" href="css/my.css">
       <meta charset="utf-8">
       <meta name="author" content="Ilia Krupko">
       <link rel="shortcut icon" href="favicon.png">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="google-site-verification" content="nmuhzxlQPEIJBWDHkvGbaA5r7BLFRy1r6_yxHtsc1BE" />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+      <link rel="stylesheet" href="css/my.css">
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
    </head>
@@ -301,51 +301,91 @@
       </section>
 
       <!-- Why Flip so useful -->
-      <section class="section secondary">
+      <section class="section secondary perks-section">
          <div class="container">
-            <div class="columns is-size-5">
-               <div class="column is-offset-1">
-                  <p class="spaced">📍 Маркировка сложных карточек</p>
-                  <p class="spaced">📈 План повторений</p>
+            <h2 class="title is-2 has-text-centered">
+               Ещё <span class="flipcolor">полезные</span> детали
+            </h2>
+            <p class="subtitle is-5 has-text-centered has-text-grey perks-lead">
+               Мелочи, которые делают ежедневное обучение удобнее.
+            </p>
+            <div class="columns is-multiline is-centered perks-grid">
+               <div class="column is-half-tablet is-one-third-desktop">
+                  <div class="box perk-card">
+                     <span class="perk-icon" aria-hidden="true">📍</span>
+                     <p class="perk-title">Маркировка сложных карточек</p>
+                  </div>
                </div>
-               <div class="column">
-                  <p class="spaced">📋 Подробная аналитика</p>
-                  <p class="spaced">🌖 Светлая и тёмная темы</p>
+               <div class="column is-half-tablet is-one-third-desktop">
+                  <div class="box perk-card">
+                     <span class="perk-icon" aria-hidden="true">📈</span>
+                     <p class="perk-title">План повторений</p>
+                  </div>
                </div>
-               <div class="column">
-                  <p class="spaced">💾 Автоматический бэкап</p>
-                  <p class="spaced">📦 Размер приложения всего 10 МБ</p>
+               <div class="column is-half-tablet is-one-third-desktop">
+                  <div class="box perk-card">
+                     <span class="perk-icon" aria-hidden="true">📋</span>
+                     <p class="perk-title">Подробная аналитика</p>
+                  </div>
+               </div>
+               <div class="column is-half-tablet is-one-third-desktop">
+                  <div class="box perk-card">
+                     <span class="perk-icon" aria-hidden="true">🌖</span>
+                     <p class="perk-title">Светлая и тёмная темы</p>
+                  </div>
+               </div>
+               <div class="column is-half-tablet is-one-third-desktop">
+                  <div class="box perk-card">
+                     <span class="perk-icon" aria-hidden="true">💾</span>
+                     <p class="perk-title">Автоматический бэкап</p>
+                  </div>
+               </div>
+               <div class="column is-half-tablet is-one-third-desktop">
+                  <div class="box perk-card">
+                     <span class="perk-icon" aria-hidden="true">📦</span>
+                     <p class="perk-title">Размер приложения всего 10 МБ</p>
+                  </div>
                </div>
             </div>
          </div>
       </section>
       <!-- Pay Only For Result -->
-      <section class="section">
-         <div class="container">
-            <div class="content is-size-5">
-               <h2 class="title is-2">
-                  Плати только за <span class="flipcolor">результат</span>
-               </h2>
-               <p>
-                  Flip это платное приложение с оплатой за результат. Ты платишь не за время или само приложение – только за карточки, которые выучил. Если Flip не помог запомнить карточку, ты не платишь.
+      <section class="section pricing-section">
+         <div class="container pricing-container">
+            <h2 class="title is-2 has-text-centered">
+               Оплата только за <span class="flipcolor">результат</span>
+            </h2>
+            <p class="subtitle is-5 has-text-centered pricing-lead">
+               Flip – платное приложение с оплатой за результат. Ты платишь не за время или само приложение, а только за карточки, которые выучил. Если Flip не помог запомнить карточку, ты не платишь.
+            </p>
+            <div class="pricing-how box">
+               <h3 class="title is-4 has-text-centered mb-4">Как это работает?</h3>
+               <p class="has-text-centered is-size-5 mb-0">
+                  Для начала Flip бесплатно даёт тебе <strong>100 Премиум-карточек</strong>. Когда карточка достигает 5-го уровня (12 дней успешных повторений), она списывается с твоего Премиум-баланса. Когда баланс заканчивается – просто пополни его.
                </p>
-               <h4 class="title is-4">
-                  Как это работает?
-               </h4>
-               <p>
-                  Для начала Flip бесплатно даёт тебе 100 Премиум-карточек. Когда карточка достигает 5-го уровня (12 дней успешных повторений), она списывается с твоего Премиум-баланса. Когда баланс заканчивается – просто пополни его.
-               </p>
-               <p>
-                  <strong>💎 100 <span class="gradient-text">Премиум-карточек</span> – $1.99</strong><br>
-                  <strong>💎 1000 <span class="gradient-text">Премиум-карточек</span> – $9.99</strong>
-               </p>
-               <p>
-                  После покупки Премиум-карточки <strong>никогда</strong> не сгорают – твой общий баланс только растёт.
-               </p>
-               <h4 class="title is-4">
-                  Сколько слов нужно для повседневного общения?
-               </h4>
-               <p>
+            </div>
+            <div class="columns is-centered pricing-plans is-mobile">
+               <div class="column is-6">
+                  <div class="box pricing-plan has-text-centered">
+                     <p class="pricing-amount">100</p>
+                     <p class="pricing-label"><span class="gradient-text">Премиум-карточек</span></p>
+                     <p class="pricing-price">$1.99</p>
+                  </div>
+               </div>
+               <div class="column is-6">
+                  <div class="box pricing-plan pricing-plan--featured has-text-centered">
+                     <p class="pricing-amount">1000</p>
+                     <p class="pricing-label"><span class="gradient-text">Премиум-карточек</span></p>
+                     <p class="pricing-price">$9.99</p>
+                  </div>
+               </div>
+            </div>
+            <p class="has-text-centered pricing-note is-size-5">
+               После покупки Премиум-карточки <strong>никогда</strong> не сгорают. Твой общий баланс только растёт.
+            </p>
+            <div class="box pricing-fact">
+               <h3 class="title is-5 has-text-centered mb-3">Сколько слов нужно для повседневного общения?</h3>
+               <p class="has-text-centered is-size-5 mb-0">
                   В целом, знание 3 000 наиболее частотных слов языка достаточно, чтобы понимать 85–90% повседневных разговоров, медиа и письменных текстов.
                </p>
             </div>

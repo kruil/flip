@@ -6,6 +6,10 @@
 	background-color: #F3F7FB;
 }
 
+.box {
+  border-radius: 36px;
+}
+
 .gradient-text {
   background: linear-gradient(to right, #218cfe, #A558E2);
   -webkit-background-clip: text;
@@ -200,4 +204,114 @@
 
 .lang-divider {
   color: #ccc;
+}
+
+.perks-section .perks-lead {
+  max-width: 34rem;
+  margin: 0.75rem auto 2.5rem;
+}
+
+.perks-grid {
+  margin-top: 0.5rem;
+}
+
+.perk-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1.5rem 1.75rem;
+  border: 1px solid rgba(30, 154, 241, 0.12);
+  box-shadow: 0 4px 18px rgba(30, 154, 241, 0.08);
+}
+
+.perk-icon {
+  font-size: 2.25rem;
+  line-height: 1;
+}
+
+.perk-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: #363636;
+  margin: 0;
+}
+
+.pricing-container {
+  max-width: 52rem;
+}
+
+.pricing-lead {
+  max-width: 40rem;
+  margin: 0.75rem auto 2rem;
+}
+
+.pricing-how,
+.pricing-fact {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.75rem 2rem;
+  border: 1px solid rgba(30, 154, 241, 0.12);
+  box-shadow: 0 4px 18px rgba(30, 154, 241, 0.08);
+}
+
+.pricing-how {
+  margin-bottom: 2.5rem;
+}
+
+.pricing-plans {
+  max-width: 40rem;
+  margin: 0 auto 1.5rem;
+}
+
+.pricing-plans > .column {
+  padding: 0.4rem;
+}
+
+.pricing-plan {
+  height: 100%;
+  padding: 1.5rem 1rem;
+  border: 2px solid transparent;
+  border-radius: 36px;
+  background:
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(240deg, #218cfe, #A558E2) border-box;
+  box-shadow: 0 4px 16px rgba(33, 140, 254, 0.1);
+}
+
+.pricing-plan--featured {
+  box-shadow: 0 4px 16px rgba(33, 140, 254, 0.1);
+}
+
+.pricing-amount {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #363636;
+  margin-bottom: 0.35rem;
+}
+
+.pricing-label {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.pricing-price {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1E9AF1;
+  margin: 0;
+}
+
+.pricing-note {
+  max-width: 36rem;
+  margin: 0 auto 2.5rem;
+}
+
+.pricing-fact {
+  margin-top: 0;
 }

@@ -5,13 +5,13 @@
       <meta name="description" content="Flip - Flashcards for iOS">
       <meta name="keywords" content="ios flashcards learn language">
       <link rel="canonical" href="https://kruil.github.io/flip">
-      <link rel="stylesheet" href="css/my.css">
       <meta charset="utf-8">
       <meta name="author" content="Ilia Krupko">
       <link rel="shortcut icon" href="favicon.png">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="google-site-verification" content="nmuhzxlQPEIJBWDHkvGbaA5r7BLFRy1r6_yxHtsc1BE" />
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+      <link rel="stylesheet" href="css/my.css">
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
    </head>
@@ -298,51 +298,91 @@
       </section>
 
       <!-- Why Flip so useful -->
-      <section class="section secondary">
+      <section class="section secondary perks-section">
          <div class="container">
-            <div class="columns is-size-5">
-               <div class="column is-offset-1">
-                  <p class="spaced">📍 Difficult cards marking</p>
-                  <p class="spaced">📈 Repetition plan to plan learning load</p>
+            <h2 class="title is-2 has-text-centered">
+               More <span class="flipcolor">Useful</span> Details
+            </h2>
+            <p class="subtitle is-5 has-text-centered has-text-grey perks-lead">
+               Small touches that make everyday learning smoother.
+            </p>
+            <div class="columns is-multiline is-centered perks-grid">
+               <div class="column is-half-tablet is-one-third-desktop">
+                  <div class="box perk-card">
+                     <span class="perk-icon" aria-hidden="true">📍</span>
+                     <p class="perk-title">Difficult cards marking</p>
+                  </div>
                </div>
-               <div class="column">
-                  <p class="spaced">📋 Detailed analytics</p>
-                  <p class="spaced">🌖 Light and dark themes</p>
+               <div class="column is-half-tablet is-one-third-desktop">
+                  <div class="box perk-card">
+                     <span class="perk-icon" aria-hidden="true">📈</span>
+                     <p class="perk-title">Repetition plan to plan learning load</p>
+                  </div>
                </div>
-               <div class="column">
-                  <p class="spaced">💾 Cloud autobackup</p>
-                  <p class="spaced">📦 App size is about 10Mb</p>
+               <div class="column is-half-tablet is-one-third-desktop">
+                  <div class="box perk-card">
+                     <span class="perk-icon" aria-hidden="true">📋</span>
+                     <p class="perk-title">Detailed analytics</p>
+                  </div>
+               </div>
+               <div class="column is-half-tablet is-one-third-desktop">
+                  <div class="box perk-card">
+                     <span class="perk-icon" aria-hidden="true">🌖</span>
+                     <p class="perk-title">Light and dark themes</p>
+                  </div>
+               </div>
+               <div class="column is-half-tablet is-one-third-desktop">
+                  <div class="box perk-card">
+                     <span class="perk-icon" aria-hidden="true">💾</span>
+                     <p class="perk-title">Cloud autobackup</p>
+                  </div>
+               </div>
+               <div class="column is-half-tablet is-one-third-desktop">
+                  <div class="box perk-card">
+                     <span class="perk-icon" aria-hidden="true">📦</span>
+                     <p class="perk-title">App size is about 10Mb</p>
+                  </div>
                </div>
             </div>
          </div>
       </section>
       <!-- Pay Only For Result -->
-      <section class="section">
-         <div class="container">
-            <div class="content is-size-5">
-               <h2 class="title is-2">
-                  Pay Only For <span class="flipcolor">Result</span>
-               </h2>
-               <p>
-                  Flip is a <strong>results-based</strong> paid app. You’re not paying for your time or the app itself – only for the cards you master. If Flip doesn’t help you memorize a card, you don’t pay.
+      <section class="section pricing-section">
+         <div class="container pricing-container">
+            <h2 class="title is-2 has-text-centered">
+               Pay Only For <span class="flipcolor">Result</span>
+            </h2>
+            <p class="subtitle is-5 has-text-centered pricing-lead">
+               Flip is a <strong>results-based</strong> paid app. You’re not paying for your time or the app itself – only for the cards you master. If Flip doesn’t help you memorize a card, you don’t pay.
+            </p>
+            <div class="pricing-how box">
+               <h3 class="title is-4 has-text-centered mb-4">How does it work?</h3>
+               <p class="has-text-centered is-size-5 mb-0">
+                  At the start, Flip gives you <strong>100 Premium cards for FREE</strong>. When a card reaches Level 5 (after a 12-day successful repetition period), it begins to count toward your Premium balance. Once your balance runs out, you’ll need to top up to keep learning.
                </p>
-               <h4 class="title is-4">
-                  How does it works?
-               </h4>
-               <p>
-                  At the start, Flip gives you 100 Premium cards for FREE. When a card reaches Level 5 (after a 12-day successful repetition period), it begins to count toward your Premium balance. Once your balance runs out, you’ll need to top up to keep learning.
-               </p>
-               <p>
-                  <strong>💎 100 <span class="gradient-text">Premium cards</span> – $1.99</strong><br>
-                  <strong>💎 1000 <span class="gradient-text">Premium cards</span> – $9.99</strong>
-               </p>
-               <p>
-                  Once purchased, Premium cards <strong>never</strong> expire – your total balance only grows.
-               </p>
-               <h4 class="title is-4">
-                  How many words do I need for daily conversations?
-               </h4>
-               <p>
+            </div>
+            <div class="columns is-centered pricing-plans is-mobile">
+               <div class="column is-6">
+                  <div class="box pricing-plan has-text-centered">
+                     <p class="pricing-amount">100</p>
+                     <p class="pricing-label"><span class="gradient-text">Premium cards</span></p>
+                     <p class="pricing-price">$1.99</p>
+                  </div>
+               </div>
+               <div class="column is-6">
+                  <div class="box pricing-plan pricing-plan--featured has-text-centered">
+                     <p class="pricing-amount">1000</p>
+                     <p class="pricing-label"><span class="gradient-text">Premium cards</span></p>
+                     <p class="pricing-price">$9.99</p>
+                  </div>
+               </div>
+            </div>
+            <p class="has-text-centered pricing-note is-size-5">
+               Once purchased, Premium cards <strong>never</strong> expire – your total balance only grows.
+            </p>
+            <div class="box pricing-fact">
+               <h3 class="title is-5 has-text-centered mb-3">How many words do I need for daily conversations?</h3>
+               <p class="has-text-centered is-size-5 mb-0">
                   In general, knowledge of the most frequent 3,000 words in a language is sufficient to understand 85–90% of daily conversations, media, and written texts.
                </p>
             </div>
@@ -406,14 +446,12 @@
             <h2 class="title is-3">
                About Developer
             </h2>
-            <div class="columns is-vcentered">
-               <div class="column is-offset-1">
-                  <div class="chat-row chat-row--right developer-chat">
-                     <div class="chat-bubble chat-bubble--right is-size-5">
-                        <p>Hi, I’m the creator of Flip. Since September 24, I’ve been using Flip daily to learn Italian and have already added over 3,500 words to my collection. I only wish I had built this app years ago – it has completely transformed my learning experience! I’m also passionate about building <a href="https://apps.apple.com/app/monetal-expense-tracker/id1302304930" target="_blank">simple and useful</a> mobile apps. If you have any questions, ideas, or feedback — feel free to reach out via <a href="mailto:support@monetal.app">email</a> or on <a target="_blank" href="https://www.reddit.com/r/flip_flashcards">Reddit</a>. I’d love to hear from you!</p>
-                        <p class="has-text-grey-light is-size-6 mt-4 mb-0">Ilia Krupko, developer of Flip</p>
-                     </div>
+            <div class="columns level is-centered">
+               <div class="column has-text-right is-offset-1">
+                  <div class="block">
+                     <i>"Hi, I’m the creator of Flip. Since September 24, I’ve been using Flip daily to learn Italian and have already added over 3,500 words to my collection. I only wish I had built this app years ago - it has completely transformed my learning experience! I’m also passionate about building <a href="https://apps.apple.com/app/monetal-expense-tracker/id1302304930" target="_blank">simple and useful</a> mobile apps. If you have any questions, ideas, or feedback — feel free to reach out via <a href="mailto:support@monetal.app">email</a> or on <a target="_blank" href="https://www.reddit.com/r/flip_flashcards">Reddit</a>. I’d love to hear from you!"</i>
                   </div>
+                  <div class="block has-text-grey-light">Ilia Krupko, developer of Flip</div>
                </div>
                <div class="column is-narrow is-hidden-mobile">
                   <img src="img/developer.png" alt="Фотография разработчика">
@@ -436,7 +474,7 @@
       <div class="container" style="margin-bottom:64px;">
          <div class="columns is-centered">
             <div class="column has-text-centered">
-               <p>&copy; 2024-2026, <strong>Flip</strong> by <a href="https://twitter.com/IlyaKrupko">Ilia Krupko</a></p>
+               <p>&copy; 2024-2025, <strong>Flip</strong> by <a href="https://twitter.com/IlyaKrupko">Ilia Krupko</a></p>
             </div>
          </div>
       </div>
