@@ -302,6 +302,10 @@
   max-width: 52rem;
 }
 
+.pricing-shell {
+  padding: 3.25rem 2rem;
+}
+
 .pricing-lead {
   max-width: 40rem;
   margin: 0.75rem auto 2rem;
@@ -373,4 +377,66 @@
 
 .pricing-fact {
   margin-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .pricing-shell {
+    padding: 2rem 1rem;
+  }
+}
+
+.language-support-lead {
+  max-width: 40rem;
+  margin: 0.75rem auto 2rem;
+}
+
+.language-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.65rem;
+  padding: 0;
+  margin: 0;
+}
+
+.language-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  background: var(--lang-color, #1E9AF1);
+  color: #2f3a4a;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.2;
+  border: 1px solid rgba(47, 58, 74, 0.08);
+  box-shadow: 0 3px 10px rgba(47, 58, 74, 0.12);
+}
+
+@media screen and (max-width: 768px) {
+  .language-list {
+    gap: 0.5rem;
+  }
+
+  .language-pill {
+    font-size: 0.85rem;
+    padding: 0.45rem 0.75rem;
+  }
+}
+
+.outreach-container {
+  max-width: 52rem;
+}
+
+.outreach-card + .outreach-card {
+  margin-top: 1.5rem;
+}
+
+.outreach-card .title {
+  margin-bottom: 1rem;
+}
+
+.outreach-card .columns {
+  margin-bottom: 0;
 }
