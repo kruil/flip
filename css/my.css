@@ -454,7 +454,7 @@
   align-items: center;
   padding: 0.5rem 0.9rem;
   border-radius: 999px;
-  background: var(--lang-color, #1E9AF1);
+  background: #fff;
   color: #2f3a4a;
   font-size: 0.95rem;
   font-weight: 600;
