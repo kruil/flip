@@ -1,3 +1,15 @@
+/* Duolingo-style content width: cap the main container at ~1080px.
+   The :not() chain matches Bulma's responsive container specificity so it
+   wins at every breakpoint (desktop/widescreen/fullhd). */
+.container:not(.is-fluid):not(.is-max-desktop):not(.is-max-widescreen) {
+  max-width: 1200px;
+}
+
+.container.pricing-container:not(.is-fluid):not(.is-max-desktop):not(.is-max-widescreen),
+.container.outreach-container:not(.is-fluid):not(.is-max-desktop):not(.is-max-widescreen) {
+  max-width: 52rem;
+}
+
 .memorilacolor {
   color: #1E9AF1;
 }
@@ -28,7 +40,7 @@
 }
 
 .gradient-divider {
-  height: 8pt;
+  height: 4pt;
   background: linear-gradient(240deg, #218cfe, #A558E2);
 }
 
