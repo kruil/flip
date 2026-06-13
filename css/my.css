@@ -178,34 +178,6 @@
   }
 }
 
-.lang-switcher {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-.lang-switcher a {
-  color: #4a4a4a;
-  text-decoration: none;
-  opacity: 0.55;
-  transition: opacity 0.15s;
-}
-
-.lang-switcher a:hover {
-  opacity: 1;
-}
-
-.lang-active {
-  color: #1E9AF1;
-  font-weight: 700;
-}
-
-.lang-divider {
-  color: #ccc;
-}
-
 .feature-slide {
   padding: 2rem 2.25rem;
 }
