@@ -41,6 +41,72 @@
                $(".navbar-burger").toggleClass("is-active");
                $(".navbar-menu").toggleClass("is-active");
            });
+
+            const whyAwesomeCards = $(".why-awesome-section .box");
+
+            if (whyAwesomeCards.length) {
+               $(".why-awesome-section").addClass("is-ready");
+
+               whyAwesomeCards.each(function(index) {
+                  this.classList.add("why-awesome-card");
+                  this.style.transitionDelay = `${Math.min(index * 80, 640)}ms`;
+                  this.addEventListener("transitionend", function handleRevealEnd(event) {
+                     if (event.propertyName === "transform") {
+                        this.style.transitionDelay = "0ms";
+                        this.removeEventListener("transitionend", handleRevealEnd);
+                     }
+                  });
+               });
+
+               if ("IntersectionObserver" in window) {
+                  const observer = new IntersectionObserver((entries) => {
+                     entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                           entry.target.classList.add("is-visible");
+                           observer.unobserve(entry.target);
+                        }
+                     });
+                  }, {
+                     threshold: 0.2
+                  });
+
+                  whyAwesomeCards.each(function() {
+                     observer.observe(this);
+                  });
+               } else {
+                  whyAwesomeCards.addClass("is-visible");
+               }
+            }
+
+            const languagePills = $(".language-list .language-pill");
+
+            if (languagePills.length) {
+               $(".language-list").addClass("is-ready");
+
+               languagePills.each(function() {
+                  this.style.transitionDelay = `${Math.floor(Math.random() * 520)}ms`;
+               });
+
+               if ("IntersectionObserver" in window) {
+                  const observer = new IntersectionObserver((entries) => {
+                     entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                           entry.target.classList.add("is-visible");
+                           observer.unobserve(entry.target);
+                        }
+                     });
+                  }, {
+                     rootMargin: "0px 0px -50% 0px",
+                     threshold: 0
+                  });
+
+                  languagePills.each(function() {
+                     observer.observe(this);
+                  });
+               } else {
+                  languagePills.addClass("is-visible");
+               }
+            }
          });
       </script>
       <!-- Menu -->
@@ -141,7 +207,7 @@
       </section>
       <div class="gradient-divider" aria-hidden="true"></div>
       <!-- Features -->
-      <section class="section  secondary">
+      <section class="section secondary why-awesome-section">
          <div class="container">
             <h2 class="title is-2 ">
                Why Memorila is <span class="memorilacolor">Awesome?</span>
@@ -184,7 +250,7 @@
                   <div class="box">
                      <h1 class="title is-1">✍️</h1>
                      <h4 class="title is-4">Effortless Word Adding</h4>
-                     <p>Just type the words you want to learn and Memorila will find translations, format the cards, and prepare them for study. Prefer full control? Paste ready-made cards: <span class="memorilacolor">word ; translation</span></p>
+                     <p>Just type the words you want to learn and Memorila will find translations and prepare them for study. Prefer full control? Paste ready-made cards: <span class="memorilacolor">word ; translation</span></p>
                   </div>
                </div>
                <div class="column is-third has-text-centered">
@@ -470,14 +536,14 @@
                <div class="column is-6">
                   <div class="box pricing-plan has-text-centered">
                      <p class="pricing-amount">100</p>
-                     <p class="pricing-label"><span class="gradient-text">Premium cards</span></p>
+                     <p class="pricing-label"><span class="gradient-text">Learned cards</span></p>
                      <p class="pricing-price">$1.99</p>
                   </div>
                </div>
                <div class="column is-6">
                   <div class="box pricing-plan pricing-plan--featured has-text-centered">
                      <p class="pricing-amount">1000</p>
-                     <p class="pricing-label"><span class="gradient-text">Premium cards</span></p>
+                     <p class="pricing-label"><span class="gradient-text">Learned cards</span></p>
                      <p class="pricing-price">$9.99</p>
                   </div>
                </div>
