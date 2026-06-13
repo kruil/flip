@@ -12,13 +12,42 @@
 
 .gradient-text {
   background: linear-gradient(to right, #218cfe, #A558E2);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
 
+.highlight-red {
+  color: #ff4b4b;
+  font-weight: 600;
+}
+
 .chat-stripe {
   background: linear-gradient(240deg, #218cfe, #A558E2);
+}
+
+.gradient-divider {
+  height: 8pt;
+  background: linear-gradient(240deg, #218cfe, #A558E2);
+}
+
+.spaced-repetition-intro {
+  background: #fff;
+}
+
+.spaced-repetition-image {
+  max-width: 360px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 36px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.spaced-repetition-image img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .chat-thread {
@@ -169,6 +198,14 @@
 .developer-chat .chat-bubble--right {
   width: 100%;
   max-width: 100%;
+}
+
+.developer-chat .chat-bubble p:not(:last-child) {
+  margin-bottom: 1.0rem;
+}
+
+.developer-chat .chat-bubble p:not(.has-text-grey-light) {
+  font-style: italic;
 }
 
 @media screen and (max-width: 768px) {
