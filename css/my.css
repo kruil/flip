@@ -320,6 +320,38 @@
   width: 360px;
 }
 
+.learning-methods-list {
+  margin-top: 1.5rem;
+}
+
+.learning-method {
+  padding: 1rem 0;
+  border-top: 1px solid rgba(54, 54, 54, 0.08);
+}
+
+.learning-method:last-child {
+  padding-bottom: 0;
+}
+
+.learning-method-title {
+  margin: 0 0 0.35rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.learning-method-title--choose {
+  color: #007AFF;
+}
+
+.learning-method-title--recall-answer {
+  color: #5856D6;
+}
+
+.learning-method-title--recall-original {
+  color: #AF52DE;
+}
+
 .walking-mode-videos {
   display: flex;
   flex-wrap: wrap;
