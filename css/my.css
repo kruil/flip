@@ -42,8 +42,37 @@
     transform 300ms ease;
 }
 
+.analytics-section {
+  overflow: hidden;
+}
+
+.analytics-section.is-ready .analytics-card {
+  opacity: 0;
+  transition:
+    opacity 900ms ease,
+    transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.analytics-section.is-ready .analytics-card--left {
+  transform: translateX(-64px);
+}
+
+.analytics-section.is-ready .analytics-card--bottom {
+  transform: translateY(64px);
+}
+
+.analytics-section.is-ready .analytics-card--right {
+  transform: translateX(64px);
+}
+
+.analytics-section.is-ready .analytics-card.is-visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .why-awesome-section.is-ready .why-awesome-card {
+  .why-awesome-section.is-ready .why-awesome-card,
+  .analytics-section.is-ready .analytics-card {
     opacity: 1;
     transform: none;
     transition: none;
