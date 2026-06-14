@@ -1,3 +1,9 @@
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 /* Duolingo-style content width: cap the main container at ~1080px.
    The :not() chain matches Bulma's responsive container specificity so it
    wins at every breakpoint (desktop/widescreen/fullhd). */
