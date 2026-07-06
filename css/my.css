@@ -125,6 +125,23 @@ body {
   display: block;
 }
 
+.kids-intro-card {
+  overflow: hidden;
+}
+
+.kids-app-icon-frame {
+  width: 220px;
+  max-width: 70vw;
+  margin: 0 auto;
+}
+
+.kids-app-icon-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 28px;
+}
+
 .chat-thread {
   width: 100%;
 }

@@ -54,6 +54,16 @@
    margin-bottom: 1.35rem;
 }
 
+.book-article ul {
+   list-style: disc;
+   margin: 0 0 1.35rem 1.4rem;
+   padding-left: 1.2rem;
+}
+
+.book-article li {
+   margin-bottom: 0.65rem;
+}
+
 .book-article .content ul,
 .book-article .content ol {
    margin-left: 1.4rem;
@@ -77,6 +87,18 @@
 .book-article figure.figure-natural img {
    height: auto;
    object-fit: initial;
+}
+
+.book-article figure.figure-app-icon {
+   max-width: 220px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.book-article figure.figure-app-icon img {
+   height: auto;
+   border-radius: 32px;
+   box-shadow: 0 8px 24px rgba(33, 140, 254, 0.16);
 }
 
 .book-article figure figcaption {
