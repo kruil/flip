@@ -89,6 +89,10 @@
    object-fit: initial;
 }
 
+.book-article figure.figure-hero {
+   margin: 0.5rem 0 1.5rem;
+}
+
 .book-article figure.figure-app-icon {
    max-width: 220px;
    margin-left: auto;
