@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Memrise vs Memorila | Why I Built My Own Flashcard App</title>
+      <meta name="description" content="After 4 years on Memrise I built Memorila. A transparent Memrise vs Memorila comparison: philosophy, features, results-based pricing, and how to migrate your words.">
+      <meta name="keywords" content="Memrise vs Memorila, Memrise alternative, flashcard app, spaced repetition, vocabulary app, language learning, custom flashcards">
+      <meta charset="utf-8">
+      <meta name="author" content="Ilia Krupko">
+      <link rel="icon" type="image/png" sizes="256x256" href="../img/favicon.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+      <link rel="stylesheet" href="../css/my.css">
+      <link rel="stylesheet" href="../css/article.css">
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+   </head>
+   <body>
+      <!-- Yandex.Metrika counter -->
+      <script type="text/javascript">
+         (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+             m[i].l=1*new Date();
+             for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+                 k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+         (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+         ym(101405267, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+         });
+      </script>
+      <noscript>
+         <div><img src="https://mc.yandex.ru/watch/101405267" style="position:absolute; left:-9999px;" alt=""></div>
+      </noscript>
+      <!-- /Yandex.Metrika counter -->
+      <script>
+         $(document).ready(function() {
+            $(".navbar-burger").click(function() {
+               $(".navbar-burger").toggleClass("is-active");
+               $(".navbar-menu").toggleClass("is-active");
+           });
+         });
+      </script>
+      <nav class="navbar is-transparent is-fixed-top">
+         <div class="container">
+            <div class="navbar-brand">
+               <a class="navbar-item" href="../index.html">
+                  <img src="../img/logo.png" alt="Memorila logo" height="32">
+               </a>
+               <div class="navbar-burger burger" data-target="navbarArticleMenu">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>
+            </div>
+            <div class="navbar-menu" id="navbarArticleMenu">
+               <div class="navbar-start">
+                  <div class="navbar-item">
+                     <a class="button navbar-item" href="https://apps.apple.com/app/id6670500654">
+                        <span class="icon"><i class="fas fa-download"></i></span>
+                        <span>Get Memorila</span>
+                     </a>
+                  </div>
+                  <a class="navbar-item" target="_blank" href="https://www.reddit.com/r/memorila/">
+                  Discussion on Reddit
+                  </a>
+                  <div class="navbar-item has-dropdown is-hoverable">
+                     <a class="navbar-link is-arrowless" href="#">
+                     Articles
+                     </a>
+                     <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item" href="spaced-repetition.html">How Spaced Repetition Works</a>
+                        <a class="navbar-item" href="memorila-for-kids.html">Memorila for Kids</a>
+                        <a class="navbar-item is-active" href="memrise-vs-memorila.html">Memrise vs Memorila</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+
+      <section class="section secondary article-page">
+         <div class="container">
+            <div class="columns is-centered">
+               <div class="column is-12 book-column">
+                  <article class="box book-article">
+                     <h1 class="title is-1 is-size-2-mobile">
+                        Why I Built Memorila After 4 Years on Memrise
+                     </h1>
+                     <p class="subtitle is-4 is-size-5-mobile">
+                        A transparent look at Memrise vs Memorila — from a solo developer who spent four years in the trenches as a Memrise power user.
+                     </p>
+
+                     <p>
+                        I spent four years of my life using Memrise (<a target="_blank" rel="noopener" href="https://community-courses.memrise.com/user/kruiller46">my profile</a>). Every single day, I opened the app to log my reps, build my vocabulary, and work toward fluency. For a long time, it was an indispensable part of my language-learning routine.
+                     </p>
+                     <p>
+                        But over the last couple of years, something shifted.
+                     </p>
+                     <p>
+                        If you are a long-term Memrise user, you know exactly what I mean. Memrise transformed from a laser-focused, high-efficiency vocabulary builder into something entirely different. They retired the beloved community courses, buried custom card creation, and began aggressively pushing video immersion clips, gamified streaks, and AI conversation bots.
+                     </p>
+                     <p>
+                        Suddenly, the app wasn't about my learning journey anymore — it was about forcing me down their pre-packaged path.
+                     </p>
+                     <p>
+                        I didn't want a noisy digital playground or an AI chatbot to converse with; I already had real-world books, podcasts, and movies for that. What I needed was a powerhouse tool to anchor the specific words I encountered in real life into my long-term memory. I needed a clean, distraction-free, highly efficient spaced repetition system (SRS) that respected my time.
+                     </p>
+                     <p>
+                        When I couldn't find it, I decided to build it. That is how Memorila was born. I didn't build it as a detached tech company looking for a market gap; I built it as a frustrated, solo language learner who wanted a better tool for himself — and for the global community of intentional learners left behind by modern Memrise.
+                     </p>
+
+                     <h2>Gamified Playground vs. Precision Vocabulary Tool</h2>
+                     <p>
+                        To truly understand the difference between Memrise and Memorila, you have to look past the buttons and interfaces and look at what both apps believe about how you should learn a language.
+                     </p>
+                     <p>
+                        <strong>The Memrise Philosophy: The Managed Playground</strong><br>
+                        Memrise operates on the assumption that language learning is a chore that needs constant sugar-coating. They believe that without streaks, leaderboards, timers, and heavy gamification, you will lose interest. Furthermore, they want to manage your entire ecosystem — to be your teacher, your audio source, your video player, and your AI conversationalist.
+                     </p>
+                     <p>
+                        The problem? By trying to do everything, they've made it incredibly difficult to do the one thing serious learners actually need: manage their own custom data. You are trapped in their sandbox, learning their curated lists of words, at their pace.
+                     </p>
+                     <p>
+                        <strong>The Memorila Philosophy: The High-Performance Engine</strong><br>
+                        Memorila is built on a radically different truth: the best vocabulary to learn is the vocabulary you encounter in the wild.
+                     </p>
+                     <p>
+                        When you read a book, watch a Netflix show, or have a conversation with a native speaker, your brain forms a tiny emotional anchor to the new words you stumble across. Memorila doesn't try to replace those real-world experiences. I assume you are already living your life in your target language.
+                     </p>
+                     <p>
+                        My job isn't to entertain you with flashy animations; my job is to provide a precision tool. Memorila takes the words you care about, eliminates the clutter, and uses an optimized Spaced Repetition System (SRS) to lock them into your long-term memory with maximum efficiency.
+                     </p>
+
+                     <h2>The Feature-by-Feature Comparison</h2>
+                     <p>
+                        When you strip away the flashy animations and the algorithms designed to maximize screen time, how do the two apps actually compare when it comes to daily study?
+                     </p>
+                     <p>
+                        Let's look at the fundamental design differences between a legacy giant trying to be an all-in-one platform and a minimalist tool engineered for raw vocabulary mastery:
+                     </p>
+                     <div class="table-container">
+                        <table class="comparison-table">
+                           <thead>
+                              <tr>
+                                 <th>Feature / Axis</th>
+                                 <th>Memrise</th>
+                                 <th>Memorila</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td><strong>Primary Focus</strong></td>
+                                 <td>Pre-built official courses, video clips, and AI conversation bots.</td>
+                                 <td>Custom user-generated vocabulary and intentional flashcards.</td>
+                              </tr>
+                              <tr>
+                                 <td><strong>Organization</strong></td>
+                                 <td>Fragmented into multiple distinct courses and official lists.</td>
+                                 <td>"One Language — One Set" philosophy to keep your entire vocabulary unified.</td>
+                              </tr>
+                              <tr>
+                                 <td><strong>Card Creation</strong></td>
+                                 <td>Highly restricted and cumbersome since community features were retired.</td>
+                                 <td>Quick Add with automatic native audio fetching and background lookup.</td>
+                              </tr>
+                              <tr>
+                                 <td><strong>Data Integrity</strong></td>
+                                 <td>Duplicates are common and messy across different courses.</td>
+                                 <td>Automatic duplicate detection (a word can never clutter your deck twice).</td>
+                              </tr>
+                              <tr>
+                                 <td><strong>Learning Environment</strong></td>
+                                 <td>Heavily gamified with streaks, timers, and loud animations.</td>
+                                 <td>Minimalist, distraction-free interface built for pure cognitive focus.</td>
+                              </tr>
+                              <tr>
+                                 <td><strong>Review Flexibility</strong></td>
+                                 <td>Requires fixed screen interaction and constant tapping.</td>
+                                 <td>Dedicated Walking Mode for pure audio review while on the move.</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+
+                     <h2>The Pricing Revolution — Why You Only Pay for Real Results</h2>
+                     <p>
+                        Let's be completely honest about how most language apps make money.
+                     </p>
+                     <p>
+                        Traditional apps — including Memrise — rely on the standard monthly or annual subscription model. On the surface, it seems normal. But if you look closer, a subscription model creates a massive conflict of interest: the app makes more money the longer it takes you to learn.
+                     </p>
+                     <p>
+                        If you get stuck in an endless loop of streaks, animations, and gamified reviews without actually moving the needle on your vocabulary, the app keeps charging you month after month. They are incentivized to keep you hooked, not necessarily to get you fluent fast.
+                     </p>
+                     <p>
+                        When I built Memorila, I wanted to flip this broken dynamic on its head. That's why I introduced <strong>Results-Based Pricing</strong>.
+                     </p>
+                     <p>
+                        Here is exactly how it works:
+                     </p>
+                     <ul>
+                        <li>
+                           <strong>Your first 100 words are 100% free.</strong> No credit cards, no hidden timers, no pressure.
+                        </li>
+                        <li>
+                           <strong>You only pay for what you actually master.</strong> A card is only deducted from your balance once you successfully guide it all the way to Level 5 (which requires a 12-day interval in my spaced repetition algorithm).
+                        </li>
+                        <li>
+                           <strong>If it doesn't stick, it's free.</strong> If you struggle with a word, forget it, or reset it, that card costs you absolutely nothing. You only spend your balance on words that are locked permanently into your long-term memory.
+                        </li>
+                     </ul>
+                     <p>
+                        So, for the first time, an app's success is directly tied to your success. I don't profit off your procrastination or slow progress. I profit when you actually learn.
+                     </p>
+
+                     <h2>The Smooth Transition — Leave Memrise Without Leaving Your Words Behind</h2>
+                     <p>
+                        One of the biggest reasons people stay with an app they've outgrown is the "sunk cost" fallacy. You think: "I've spent years building my vocabulary list here. If I switch apps, I have to start all over again from scratch."
+                     </p>
+                     <p>
+                        As someone who used Memrise for 4 years, I completely understand that pain — and I refused to let it happen to Memorila users.
+                     </p>
+                     <p>
+                        Switching to Memorila doesn't mean deleting your progress. I've built a completely seamless migration system to help you pack up your vocabulary and move into your new, distraction-free digital home in under two minutes.
+                     </p>
+                     <p>
+                        <strong>Meet the Memorila Chrome Extension:</strong> I designed a <a target="_blank" rel="noopener" href="https://chromewebstore.google.com/detail/memrise-to-flip-exporter/bofgcbmkaekkiaojgnmegnfoeblmelcn">dedicated browser extension</a> specifically to bridge this gap. With a single click, you can export your custom vocabulary data directly out of Memrise.
+                     </p>
+                     <p>
+                        Once you have your words, importing them into Memorila takes seconds. My system will automatically:
+                     </p>
+                     <ul>
+                        <li>
+                           <strong>Deduplicate your list</strong>, ensuring no accidental repeats clutter your neat new setup.
+                        </li>
+                        <li>
+                           <strong>Apply the "One Language — One Set" rule</strong>, instantly organizing your scattered courses into one beautiful, unified language dashboard.
+                        </li>
+                        <li>
+                           <strong>Fetch clean audio &amp; translations</strong>, instantly readying your deck for your first session — including the hands-free Walking Mode for when you're on the move.
+                        </li>
+                     </ul>
+
+                     <h2>It's Time to Upgrade Your Vocabulary Strategy</h2>
+                     <p>
+                        Look, Memrise is a massive platform, and it's perfectly fine for casual hobbyists who want a fun, pre-packaged introduction to a language. But if you are a serious, intentional learner — if you've been studying for months or years, and you have specific fluency goals — you will eventually outgrow the gamified playground.
+                     </p>
+                     <p>
+                        You don't need an app to generate artificial engagement. You need an app that respects your intelligence, protects your time, and gives you absolute control over your digital lexicon.
+                     </p>
+                     <p>
+                        You spent years letting a massive company control what and how you learn. It's time to take control of your own fluency.
+                     </p>
+                     <p>
+                        <strong>Ready to try a smarter alternative?</strong> Download Memorila today. Your first 100 mastered words are completely free. Grab my Chrome Extension, import your existing words from Memrise in less than two minutes, and experience what an app built by a solo language learner for language learners feels like.
+                     </p>
+
+                     <div class="article-footer">
+                        <a class="button is-medium mr-3 mb-3" href="https://apps.apple.com/app/id6670500654">
+                           <span class="icon"><i class="fas fa-download"></i></span>
+                           <span>Get Memorila for Free</span>
+                        </a>
+                        <a class="button is-medium mr-3 mb-3" target="_blank" rel="noopener" href="https://chromewebstore.google.com/detail/memrise-to-flip-exporter/bofgcbmkaekkiaojgnmegnfoeblmelcn">
+                           <span class="icon"><i class="fab fa-chrome"></i></span>
+                           <span>Get the Chrome Extension</span>
+                        </a>
+                        <a class="button is-medium" href="../index.html">
+                           <span class="icon"><i class="fas fa-arrow-left"></i></span>
+                           <span>Back to main page</span>
+                        </a>
+                     </div>
+                  </article>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <hr>
+      <div class="container" style="margin-bottom:64px;">
+         <div class="columns is-centered">
+            <div class="column has-text-centered">
+               <p>&copy; 2024-2026, <strong>Memorila</strong> by <a href="https://twitter.com/IlyaKrupko">Ilia Krupko</a></p>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
