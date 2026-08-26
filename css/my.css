@@ -404,6 +404,42 @@ body {
   line-height: 1.4;
 }
 
+.community-columns {
+  margin-top: 1.75rem;
+}
+
+.community-columns > .column > p {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.new-tag {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.35rem;
+  padding: 0.2em 0.5em;
+  position: relative;
+  top: -0.4em;
+  font-size: 0.42em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+  color: #fff;
+  background: #e53935;
+  border-radius: 4px;
+}
+
+.community-shot {
+  margin: 0 auto 1.25rem;
+  max-width: 320px;
+}
+
+.community-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 @media screen and (max-width: 768px) {
   .feature-slide {
     padding: 1.25rem;
@@ -428,6 +464,10 @@ body {
 
   .walking-mode-videos {
     justify-content: center;
+  }
+
+  .community-shot {
+    max-width: 280px;
   }
 }
 
