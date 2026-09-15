@@ -1,0 +1,8 @@
+{
+  "applinks": {
+    "details": [{
+      "appIDs": ["X3AK29HB99.com.ilia.krupko.flip"],
+      "components": [{ "/": "/join/*" }]
+    }]
+  }
+}
